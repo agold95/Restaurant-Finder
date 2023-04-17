@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device=width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <title>Restaurant Finder</title>
+    </head>
+    <header>
+        <div class="header">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="animate-character">Restaurant Finder</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body class="body">
+        <h2>Don't know where to eat?</h2>
+        <h3>With the click of a button you can use Restaurant Finder to find a random local restaurant.</h3>
+        <div class="container">
+            <button id="button" type="button" onclick="getLocation()">Find A Restaurant!</button>
+            <p hidden id="latlong"></p>
+            <script src="main.js"></script>
+        </div>
+        <div class="display">
+            <p id="restaurant"></p>
+            <p id="rating"></p>
+            <p id="address"></p>
+        </div>
+    </body>
+</html>
